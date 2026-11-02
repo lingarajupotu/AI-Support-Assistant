@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Support Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>AI Support Assistant</h1>
+            <p>Customer query analysis and support response system</p>
+        </header>
+
+        <section class="query-section">
+            <h2>Customer Query</h2>
+
+            <textarea id="query"
+                placeholder="Enter customer query..."></textarea>
+
+            <button id="submitBtn" onclick="submitQuery()">
+                Submit Query
+            </button>
+        </section>
+
+        <section id="results" class="results hidden">
+
+            <h2>Verification Result</h2>
+
+            <div class="result-card">
+                <p><strong>Order ID:</strong> <span id="orderId">-</span></p>
+                <p><strong>Issue:</strong> <span id="issue">-</span></p>
+                <p><strong>Status:</strong> <span id="status">-</span></p>
+                <p><strong>Explanation:</strong> <span id="explanation">-</span></p>
+            </div>
+
+            <h2>Customer Response</h2>
+            <div class="reply-card" id="reply"></div>
+
+            <h2>Supporting Records</h2>
+            <pre id="evidence">No supporting records.</pre>
+
+        </section>
+
+        <p id="error" class="error"></p>
+
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

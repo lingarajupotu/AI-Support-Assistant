@@ -1,0 +1,1 @@
+deliveries = pd.read_csv(r"C:\Users\Linga Raju\Downloads\AI_Intern_Candidate_Pack_2026-11-02\data\deliveries.csv" + "deliveries.csv")
